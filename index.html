@@ -1,39 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Bootstrap Li-Ju Chen</title>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .navbar-fixed-left h1{
+  	color:gray;
+  }
+  .navbar-fixed-left h2{
+  	color:gray;
+  }
+  .navbar-fixed-left h4{
+  	color:gray;
+  }
+  .navbar-fixed-left {
+    width: 500px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+	}
+	li a {
+  		
+	}
+  body {
+    position: relative; 
+  }
+  #section1 {padding-left:550px;height:500px;color: #fff; background-color: #1E88E5;}
+  #section2 {padding-left:550px;height:500px;color: #fff; background-color: #673ab7;}
+  #section3 {padding-left:550px;height:500px;color: #fff; background-color: #ff9800;}
+  #section41 {padding-left:550px;height:500px;color: #fff; background-color: #00bcd4;}
+  #section42 {padding-left:550px;height:500px;color: #fff; background-color: #009688;}
+  </style>
 </head>
-<body>
-
-<div class="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
-</div>
-  
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<div class="row">
+<div class="col-sm-4">
+<nav class="navbar navbar-inverse navbar-fixed-left">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <h1>Li-Ju Chen's Resume</h1>
+      <h2> ROFILE SUMMARY</h2><br>
+	  <h4>Highly motivated student specializing in computer vision, deep learning, and loT applications. Experienced in developing and implementing computer vision algorithms for indoor drones, focusing on tracking and image processing. Proficient in optimizing algorithm performance through parallel computing, GPU acceleration, and algorithmic enhancements.</h4><br>
     </div>
-    <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    <div>
+      <div class="collapse navbar-collapse test" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Work Experiences</a></li><br>
+          <li><a href="#section2">Research & Project</a></li><br>
+          <li><a href="#section3">Education</a></li><br>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Section 4-1</a></li>
+              <li><a href="#section42">Section 4-2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
+</nav>    
 </div>
-
+<div id="section1" class="container-fluid">
+  <h1>Work Experiences</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section2" class="container-fluid">
+  <h1>Research & Project</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section3" class="container-fluid">
+  <h1>Education</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section41" class="container-fluid">
+  <h1>Section 4 Submenu 1</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section42" class="container-fluid">
+  <h1>Section 4 Submenu 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+</div>
 </body>
 </html>
