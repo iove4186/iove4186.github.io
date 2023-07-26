@@ -32,11 +32,20 @@
   body {
     position: relative; 
   }
-  #section11 {padding-left:37%;height:500px;color: gray; background-color: #F0F8FF;}
-  #section12 {padding-left:37%;height:500px;color: gray; background-color: #D3D3D3;}
-  #section2 {padding-left:37%;height:500px;color: gray; background-color: #F0F8FF;}
-  #section3 {padding-left:37%;height:500px;color: gray; background-color: #D3D3D3;}
-  #section4 {padding-left:37%;height:500px;color: gray; background-color: #F0F8FF;}
+  .content p{
+  	font-size:20px;
+  }
+  .content li{
+  	font-size:18px;
+  }
+  #section11 {padding-left:37%;height:180px;color: gray; background-color: #F0F8FF;}
+  #section12 {padding-left:37%;height:350px;color: gray; background-color: #D3D3D3;}
+  #section13 {padding-left:37%;height:300px;color: gray; background-color: #F0F8FF;}
+  #section14 {padding-left:37%;height:280px;color: gray; background-color: #D3D3D3;}
+  #section15 {padding-left:37%;height:270px;color: gray; background-color: #F0F8FF;}
+  #section2 {padding-left:37%;height:500px;color: gray; background-color: #D3D3D3;}
+  #section3 {padding-left:37%;height:500px;color: gray; background-color: #F0F8FF;}
+  #section4 {padding-left:37%;height:500px;color: gray; background-color: #D3D3D3;}
   
   </style>
 </head>
@@ -60,8 +69,11 @@
         <ul class="nav navbar-nav">
         	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Work Experiences<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#section11">Section 4-1</a></li>
-              <li><a href="#section12">Section 4-2</a></li>
+              <li><a href="#section11">R&D Intern at Canon U.S.A.</a></li>
+              <li><a href="#section12">Computer Vision Engineer at RogersAI</a></li>
+              <li><a href="#section13">Research Assistant at Academia Sinica Taiwan</a></li>
+              <li><a href="#section14">R&D Engineer at Foxconn Technology Group.</a></li>
+              <li><a href="#section15">Technical Support Intern at LINE Pay Taiwan.</a></li>
             </ul>
           </li><br>
           <li><a href="#section2">Research</a></li><br>
@@ -71,6 +83,7 @@
       </div>
     </div>
     <div class="skill">
+    <br>
     <p>COMPUTER LANGUAGES/SKILL/LIBARY</p>
     <p>C/C++, Python, SQL, PHP, Java, HTML/CSS, C#, Matlab, Javascript, JSON, OpenCV, OpenCL, Arm Neon, OpenGL, Tensor-flow, Fastov, Web, OpenMp, Unity, Pytorch,
 Kears, Node.js, Docker, Linux, Firebase, NodeRed, ESP8266, NodeMCU, Arduino, RaspberryPi, Android, WordPress.</p>
@@ -78,15 +91,46 @@ Kears, Node.js, Docker, Linux, Firebase, NodeRed, ESP8266, NodeMCU, Arduino, Ras
   </div>
 </nav>    
 </div>
+<div class="content">
 <div id="section11" class="container-fluid">
-  <h1>Work Experiences - </h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <h1>Work Experience</h1>
+  <h3>R&D Intern at Canon U.S.A., Inc. 06,2023 - Present.</h3>
+  <p>Overview: Developed computer vision applications to enhance quality.</p>
 </div>
 <div id="section12" class="container-fluid">
-  <h1>Work Experiences - </h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <h3>Computer Vision Engineer at RogersAI. 03,2021 - 09,2022.</h3>
+  <p>Overview: Designed and implemented a localization (SLAM) algorithm in C++, achieving significant performance improvements through GPU and Arm Neon optimizations.</p>
+  <ul>
+  	<li>Built an automatic indoor drone system using Robot Operating System (ROS) and Java/C++, enhancing efficiency and functionality.</li>
+  	<li>Collected TOF and R B images from Qualcomm Snapdragon platform on Android, contributing toaccuratecataanalvsis.</li>
+  	<li>Optimized localization algorithms for limited computing resource hardware, resulting in a four- fold performance enhancement.</li>
+  	<li>Implemented a filter on TOF images, achieving a 3% increase in accuracy for face recognition.</li>
+  </ul>
+</div>
+<div id="section13" class="container-fluid">
+  <h3>Research Assistant at Academia Sinica Taiwan.  09.2019- 02.2021.</h3>
+  <p>Overview: Implemented privacy-preserving techniques ni Deep Learning and co-authored a paper on facial image obfuscation.</p>
+  <ul>
+  	<li>Implemented a privacy-preserving mechanism using Deep Learning and Differential Privacy, resulting in improved facial image quality by 22% with the same level of security.</li>
+  	<li>Co-authored a paper titled "Perceptual Indistinguishability-Net (PI-Net): Facial Image Obfuscation with Manipulable Semantics," presented at the EIE Conference on Computer Vision and Pattern Recognition (CVPR), 2021.</li>
+  </ul>
+</div>
+<div id="section14" class="container-fluid">
+  <h3>R&D Engineer at Foxconn Technology Group.  07,2018 - 05,2019.</h3>
+  <p>Overview: Improved factory productivity by 5% through edge detection and object recognition using CNN.</p>
+  <ul>
+  	<li>Improved factory productivity by at least 5% through the utilization of edge detection algorithm and de-noise filters.</li>
+  	<li>Developed an object recognition system using CNN, enhancing non-contact measuring efficiency. Contributed to camera calibration and depth measurement. (using C++)</li>
+  </ul>
+</div>
+<div id="section15" class="container-fluid">
+  <h3>Technical Support Intern at LINE Pay Taiwan. 06,2016 - 12,2017.</h3>
+  <p>Overview: Integrated LINE Pay API across multiple programming languages, developed data analysis tools and maintained data bases.</p>
+  <ul>
+  	<li>Integrated LINE Pay API with websites of various programming languages (PHP, Java, Ruby, etc.).</li>
+  	<li>Building tools in Java, Excel, SQL, and Python to efficiently analyze business data in databases.</li>
+  	<li>Maintained databases and dashboards to support operators in executing risk avoidance and marketing strategies.</li>
+  </ul>
 </div>
 <div id="section2" class="container-fluid">
   <h1>Research</h1>
@@ -102,6 +146,7 @@ Kears, Node.js, Docker, Linux, Firebase, NodeRed, ESP8266, NodeMCU, Arduino, Ras
   <h1>Education</h1>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
 </div>
 </div>
 </body>
